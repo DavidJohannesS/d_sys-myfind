@@ -1,4 +1,5 @@
 #include "../include/ArgumentParser.h"
+#include "../include/ProcessManager.h"
 #include <iostream>
 
 int main(int argc, char *argv[]) {
@@ -21,7 +22,9 @@ int main(int argc, char *argv[]) {
     }
     std::cout << std::endl;
 
-    // Further processing can go here
+    // Create an instance of ProcessManager and run the process
+    ProcessManager processManager(fileNames, searchPath, recursive, caseInsensitive);
+    processManager.run();
 
     return 0;
 }
