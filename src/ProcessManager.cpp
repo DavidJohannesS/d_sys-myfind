@@ -1,6 +1,6 @@
 #include "../include/ProcessManager.h"
-#include "../include/FileFinder.h" // Assuming you have implemented this class
-#include "../include/OutputSynchronizer.h" // Assuming you have implemented this class
+#include "../include/FileFinder.h" 
+#include "../include/OutputSynchronizer.h"
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
